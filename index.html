@@ -3,24 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Arunachal Pradesh and Sikkim</title>
-=======
-    <title>Economic Aspects of North East: Arunachal Pradesh and Sikkim</title>
->>>>>>> 867c79fdca74cbfdcebea3184580658826ab23d2
     <link rel="stylesheet" href="styles.css">
    
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> Tanishka Jain | Class XI-B</li>
-            <li><a href="political-science.html">Political Science</a></li>
-            <li><a href="geography.html">Geography</a></li>
-            <li><a href="economic.html">Economic</a></li>
-            <li><a href="history.html">History</a></li>
-        </ul>
-    </nav>
 
     <header>
         <video autoplay muted loop poster="https://thumbs.dreamstime.com/b/mountain-view-city-india-sikkim-arunachal-pradesh-mountain-view-city-india-sikkim-arunachal-pradesh-221340000.jpg">
@@ -33,6 +20,28 @@
             <p>Exploring the Political Landscape</p>
         </div>
     </header>
+
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li>Tanishka Jain | Class XI-B</li>
+            <li><a href="political-science.html">Political Science</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="economic.html">Economic</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dropdown Menu for Mobile -->
+    <div class="dropdown">
+        <ul>
+            <li><a href="political-science.html">Political Science</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="economic.html">Economic</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    
 
     <div class="container">
         <section class="section">
@@ -95,5 +104,16 @@
     <footer>
         <p>&copy; 2024 Design & Developed by Tanishka Jain | Class XI-B. All Rights Reserved.</p>
     </footer>
+    <script>
+        // JavaScript to toggle the mobile menu
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('nav ul');
+        const dropdown = document.querySelector('.dropdown');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
